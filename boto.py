@@ -36,9 +36,6 @@ def answer(user_message):
     activity_response = ('making money', 'dancing')
     joke = ['joke']
 
-    # for word in greetings:
-    #     any(item == word for item in greetings):
-
     if any([word if word in greetings else None for word in user_message_list]):
         return json.dumps({"animation": "excited", "msg": random.choice(greeting_responses)})
 
